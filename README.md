@@ -1,0 +1,3 @@
+# To learn sass and component based react.
+
+## This small static page project's README.md will be updated soon...

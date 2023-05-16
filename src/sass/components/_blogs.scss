@@ -1,0 +1,10 @@
+.blogs {
+
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px auto;
+
+}
+

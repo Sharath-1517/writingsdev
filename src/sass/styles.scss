@@ -1,0 +1,9 @@
+@use './config';
+@use './components';
+@use './attributes/' as *;
+
+body {
+    background-color: $body-bg;
+    color: #ffffff;
+}
+

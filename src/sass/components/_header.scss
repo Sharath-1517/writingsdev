@@ -1,0 +1,54 @@
+@use '../attributes' as *;
+
+.header {
+
+    font-size: 1.1rem;
+    @include font-family("Poppins");
+
+    h2 {
+        font-weight: 300;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &--content {
+        position: relative;
+        margin: 73px auto 40px auto;
+        text-align: center;
+        width: min(700px, 100%);
+
+        h1 {
+            color: $header-font;
+            @include font-family("Recursive");
+            font-style: italic;
+            font-weight: 500;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        img {
+            position: relative;
+            left: 35px;
+            width: 15rem;
+        }
+
+    }
+
+
+}

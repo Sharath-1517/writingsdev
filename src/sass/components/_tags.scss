@@ -1,0 +1,81 @@
+@use '../attributes' as *;
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    @include font-family("Recursive");
+    font-style: italic;
+    
+    &--display {
+        img {
+            &:nth-child(2) {
+                margin-left: 15px;
+            }
+        }
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        list-style: none;
+        li {
+            transition: .1s;
+            cursor: pointer;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+
+    @media (width < 1068px) {
+        display: none;
+    }
+
+}
+
+.pages {
+
+    display: flex;
+    width: min(100%, 600px);
+    margin:  40px auto;
+    justify-content: space-between;
+    align-items: center;
+    @include font-family("Recursive");
+    
+    h4 {
+        font-size: 1.1rem;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+            color: $header-font;
+        }
+    }
+    
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 45px;
+        font-size: 1.1rem;
+        li {
+            
+            width: 100%;
+            transition: .3s;
+            cursor: pointer;
+            &:hover {
+                color: $header-font;
+            }
+        }
+    }
+
+    @media (width < 1068px) {
+        justify-content: center;
+        ul {
+            li {
+                display: none;
+            }
+        }
+    }
+}
