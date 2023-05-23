@@ -45,6 +45,19 @@ hr {
   html .blogs {
     grid-template-columns: 1fr;
   }
+  html .nav {
+    flex-direction: column;
+  }
+  html .nav--elements {
+    padding: 0;
+  }
+  html .pages {
+    max-width: 60%;
+    text-align: center;
+  }
+  html .pages h4:nth-child(3n) {
+    width: 100%;
+  }
 }
 
 .header {
@@ -135,6 +148,9 @@ hr {
 }
 .pages h4:hover {
   color: #FF7575;
+}
+.pages h4 + h4 {
+  width: 100%;
 }
 .pages ul {
   display: flex;

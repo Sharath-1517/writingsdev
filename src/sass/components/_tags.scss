@@ -53,6 +53,10 @@
             color: $header-font;
         }
     }
+
+    h4 + h4 {
+        width: 100%;
+    }
     
     ul {
         display: flex;
