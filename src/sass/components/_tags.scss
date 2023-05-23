@@ -41,9 +41,12 @@
     display: flex;
     width: min(100%, 600px);
     margin:  40px auto;
+    padding-bottom: 50px;
     justify-content: space-between;
     align-items: center;
     @include font-family("Recursive");
+    text-align: center;
+    gap: 100px;
     
     h4 {
         font-size: 1.1rem;

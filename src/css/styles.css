@@ -52,10 +52,16 @@ hr {
     padding: 0;
   }
   html .pages {
+    gap: 0;
     max-width: 60%;
-    text-align: center;
   }
-  html .pages h4:nth-child(3n) {
+  html .pages ul li {
+    display: none;
+  }
+  html .pages h4:nth-child(1) {
+    width: 100%;
+  }
+  html .pages h4:nth-child(3) {
     width: 100%;
   }
 }
@@ -137,9 +143,12 @@ hr {
   display: flex;
   width: min(100%, 600px);
   margin: 40px auto;
+  padding-bottom: 50px;
   justify-content: space-between;
   align-items: center;
   font-family: "Recursive", sans-serif;
+  text-align: center;
+  gap: 100px;
 }
 .pages h4 {
   font-size: 1.1rem;

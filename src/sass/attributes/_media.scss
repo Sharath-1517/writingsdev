@@ -42,10 +42,18 @@ html {
         }
 
         .pages {
+            gap: 0;
             max-width: 60%;
-            text-align: center;
+            ul {
+                li {
+                    display: none;
+                }
+            }
             h4 {
-                &:nth-child(3n) {
+                &:nth-child(1) {
+                    width: 100%;
+                }
+                &:nth-child(3) {
                     width: 100%;
                 }
             }
